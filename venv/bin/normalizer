@@ -1,0 +1,8 @@
+#!/Users/tanakatsuyoshi/Desktop/デプロイ/0205_LinkFastNect_Backend-master/venv/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from charset_normalizer import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli.cli_detect())
